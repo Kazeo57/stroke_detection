@@ -1,0 +1,17 @@
+# Env
+venv/
+env/
+.myvenv/
+.myenv/
+**/stream/
+
+# python files
+__pycache__/
+*.pyc
+
+# Tools
+.idea/
+.vscode/
+
+#Models 
+models/brain_seg_v2.h5 
