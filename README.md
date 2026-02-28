@@ -18,7 +18,7 @@ This project is built upon that vision. The objective is to design and evaluate 
 ### Video Demo
 
 <video width="480" controls>
-  <source src="assets/Demo%20mémoire.mp4" type="video/mp4">
+  <source src="./assets/demo.mp4" type="video/mp4">
   Watch the video.
 </video>
 
