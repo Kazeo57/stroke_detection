@@ -14,4 +14,4 @@ __pycache__/
 .vscode/
 
 #Models 
-models/brain_seg_v2.h5 
+**/models/brain_seg_v2.h5 
