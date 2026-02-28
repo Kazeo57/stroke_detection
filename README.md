@@ -17,7 +17,10 @@ This project is built upon that vision. The objective is to design and evaluate 
 
 ### Video Demo
 
-[![Watch the video](assets/Demo mémoire.mp4)]
+<video width="480" controls>
+  <source src="assets/Demo%20mémoire.mp4" type="video/mp4">
+  Watch the video.
+</video>
 
 ### Exécuter l'inférence localement
 To test model on new CT scan Image (format `.jpeg` ou `.png`,`.jpg`) :
