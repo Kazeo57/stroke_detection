@@ -4,6 +4,8 @@ env/
 .myvenv/
 .myenv/
 **/stream/
+**/workflow/dataprep/.local_env
+
 
 # python files
 __pycache__/
