@@ -1,7 +1,8 @@
 # stroke_detection
 <p align="center">
-  <img src="assets/banner_results.png" alt="Stroke Detection Banner" width="800">
-</p>
+  <img src="assets/Screenshot 2026-03-15 at 16.12.33.png" alt="Training Loss Curve" width="400">
+  <img src="assets/Screenshot 2026-03-15 at 16.13.42.png" alt="mIoU Graph" width="400">
+</p
 
 ---
 
@@ -47,9 +48,9 @@ The implementation of domain adaptation and hybrid refinement led to a significa
 
 ### Training Evolution & Visual Results
 <p align="center">
-  <img src="assets/loss_curve.png" alt="Training Loss Curve" width="400">
-  <img src="assets/miou_evolution.png" alt="mIoU Graph" width="400">
+  <img src="assets/Screenshot 2026-03-15 at 16.13.00.png" alt="mIoU Graph" width="800">
 </p>
+
 ---
 
 ##  1. Démo & Inference (Quick Start)
@@ -72,5 +73,5 @@ To test model on new CT scan Image (format `.jpeg` ou `.png`,`.jpg`) :
 
 ### 2. Roadmap 
 # Train using the optimized hybrid configuration
-python recipes/custom_train.py --arch efficientnet_unet --epochs 100 --hybrid_refinement
+python recipes/train.py --arch efficientnet_unet --epochs 100 --hybrid_refinement
 
