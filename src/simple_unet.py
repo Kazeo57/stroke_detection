@@ -3,7 +3,8 @@ from encoder import encoder_block
 from decoder import decoder_block
 
 
-def unet_model(input_shape=(256, 256, 3), num_classes=1):
+def unet_model(input_shape=(256, 256, 3), num_classes=5):
+    assert num_classes>1
     inputs = tf.keras.layers.Input(shape=input_shape)
 
     # Contracting Path (Encoder)
@@ -24,7 +25,7 @@ def unet_model(input_shape=(256, 256, 3), num_classes=1):
     d3 = decoder_block(d2, s2, 128)
     d4 = decoder_block(d3, s1, 64)
 
-    outputs = tf.keras.layers.Conv2D(num_classes, 1, padding='same', activation='sigmoid')(d4)
+    outputs = tf.keras.layers.Conv2D(num_classes, 1, padding='same', activation='softmax')(d4)
     #outputs=
     model = tf.keras.models.Model(inputs=inputs, outputs=outputs, name='U-Net')
     return model
