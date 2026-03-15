@@ -75,3 +75,5 @@ To test model on new CT scan Image (format `.jpeg` ou `.png`,`.jpg`) :
 # Train using the optimized hybrid configuration
 python recipes/train.py --arch efficientnet_unet --epochs 100 --hybrid_refinement
 
+*There are also some,notebooks to train verything you want in vision segmentation*
+
