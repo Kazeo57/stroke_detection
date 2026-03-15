@@ -26,7 +26,7 @@ This project is built upon that vision. The objective is to design and evaluate 
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
 ---
-"## 🔬 Methodology: The Hybrid Approach
+"##  Methodology: The Hybrid Approach
 
 Unlike standard segmentation, this project implements a **Hybrid U-Net + Chan-Vese approach**:
 
@@ -36,7 +36,7 @@ Unlike standard segmentation, this project implements a **Hybrid U-Net + Chan-Ve
 
 ---
 
-## 📊 Performance & Key Results
+##  Performance & Key Results
 
 The implementation of domain adaptation and hybrid refinement led to a significant performance leap compared to baseline architectures.
 
