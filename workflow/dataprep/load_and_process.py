@@ -20,9 +20,9 @@ def load_image_and_mask(image_path,mask_path):
   image=tf.cast(tf.image.decode_jpeg(image,channels=3),tf.float32)
   image=tf.image.resize(image,[128,128],method="nearest")/255.0
   #eVENTUAL RESIZE STEP
-
   mask=tf.io.read_file(mask_path)
   mask=tf.image.decode_png(mask,channels=1)
+  assert image.shape[-1]==3
   #eVENTUAL RESIZE STEP
   mask=tf.image.resize(mask,[128,128],method="nearest")
   mask=tf.cast(mask,tf.uint8)

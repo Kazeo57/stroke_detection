@@ -5,6 +5,7 @@ from tensorflow.keras.layers import Input,Conv2D ,MaxPooling2D ,UpSampling2D,con
 from decoder import decoder_block
 
 def create_mobilenet_unet(input_shape,num_classes):
+  assert num_classes>1
   base_model=tf.keras.applications.MobileNetV2(input_shape=input_shape,include_top=False)
 
   layer_names=[
@@ -102,6 +103,7 @@ def pre_vgg_unet(input_shape,num_classes):
 
 
 def pre_resnet_unet(input_shape,num_classes):
+  assert num_classes>1
   base_resnet_model=tf.keras.applications.ResNet50(input_shape=input_shape,include_top=False)
 
   resnet_layer_names = [
@@ -160,6 +162,7 @@ efficient_layer_names = [
 ]
 
 def pre_efficientnet_unet(input_shape,num_classes):
+  assert num_classes>1
   base_efficient_model=tf.keras.applications.EfficientNetB0(input_shape=input_shape,include_top=False)
 
   efficient_layer_names = [
